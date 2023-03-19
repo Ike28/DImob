@@ -1,0 +1,106 @@
+@import url(
+'https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@900&display=swap'
+);
+
+#background-image-index {
+    background: url(../img/index_img_res/skyscape.jpg) no-repeat center center/cover;
+}
+
+/* Navbar */
+
+#navbar {
+    background: #003049;
+    color: #fff;
+    overflow: auto;
+    font-size: 1.5rem;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar h1 {
+    float: left;
+    padding: 2rem 0rem;
+}
+
+#navbar ul {
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+}
+
+.link-item:hover,
+.current {
+    background: #014060;
+    border-color: #d62828;
+}
+
+/* Showcase */
+
+#showcase {
+    height: 50rem;
+}
+
+.showcase {
+    text-align: center;
+    padding-top: 20rem;
+}
+
+.text-showcase {
+    font-size: 6rem;
+    line-height: 8rem;
+    color: #fff;
+}
+
+/* Bar */
+
+#bar {
+    min-width: 100%;
+    padding: 0rem 0rem;
+}
+
+.apartment-bar-element {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+    min-width: 33.3%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    backdrop-filter: blur(0.5rem);
+    font-size: 1.5rem;
+}
+
+.apt-bar-cont {
+    transition: transform .2s;
+}
+
+.apt-bar-cont:hover {
+    transform: scale(1.1);
+}
+
+.container ul {
+    list-style: none;
+}
+
+.property-image img {
+    width: 24rem;
+    height: 13.5rem;
+}
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    color: #b1b1b1;
+    padding: 3rem 2rem;
+    font-size: 1.2rem;
+}

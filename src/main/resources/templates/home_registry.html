@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content="Diebmann: nice living">
+    <meta name = "keywords" content="imob,imobiliare,diebmann imobiliare,diebmann">
+    <link rel="stylesheet" href="css/style_utils.css">
+    <link rel="stylesheet" href="css/diebmann_add_style.css">
+    <title>Domiciles | DI</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="bg-transparent">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="index">
+                        <span class="red-text">Diebmann</span>
+                        <span class="pale-text">Imobiliare</span></a>
+                </h1>
+                <ul>
+                    <li>
+                        <a class = "link-item" href="index">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "link-item" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "link-item" href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "link-item" href="add_property">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Zone</th>
+                <th>Address</th>
+                <th>Area (sq.m)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="p :${property}">
+                <th scope="row"></th>
+                <td th:text="${p.city}"></td>
+                <td th:text="${p.zone}"></td>
+                <td th:text="${p.address}"></td>
+                <td th:text="${p.surfaceArea}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="clr"></div>
+    <footer id="main-footer">
+        <p>Diebmann Imobiliare &copy; 2021, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
